@@ -25,13 +25,16 @@
       width: 120px;
       height: 120px;
       border-radius: 26px;
-      background: linear-gradient(145deg, #1a1a2e, #16213e);
       margin: 0 auto 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 56px;
+      overflow: hidden;
       box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    }
+
+    .app-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     h1 {
@@ -122,7 +125,7 @@
 <body>
 
   <header>
-    <div class="app-icon">🪞</div>
+    <div class="app-icon"><img src="./icon.png" alt="おくれ鏡"></div>
     <h1>おくれ鏡</h1>
     <p class="subtitle">Delay Mirror Camera — 数秒前の自分を映す鏡</p>
     <a class="badge" href="https://apps.apple.com/jp/app/%E3%81%8A%E3%81%8F%E3%82%8C%E9%8F%A1-delay-mirror-camera/id6761320821" target="_blank">
